@@ -28,6 +28,7 @@ export default {
 
     &__searchbar {
       position: relative;
+      z-index: 1;
     }
 
     &__logo {
@@ -45,6 +46,10 @@ export default {
       border: none;
       border-radius: 10px;
       font-family: inherit;
+      padding-right: 30px;
+      padding-left: 10px;
+      position: relative;
+      z-index: 1;
 
       &-btn {
         background-image: url('/src/assets/icons8-search.svg');
@@ -53,10 +58,11 @@ export default {
         background-repeat: no-repeat;
         border: 0;
         outline: none;
-        background-color: transparent;
+        background-color: #fff;
         position: absolute;
         top: 1%;
         left: 80%;
+        z-index: 5;
       }
 
       &::placeholder {
